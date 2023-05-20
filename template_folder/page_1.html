@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Event-Booker</title>
+</head>
+<body>
+<h1>Welcome to Event-Booker!</h1>
+<p1>If you wish to create an account, please fill out the form below:</p1>
+<form action="{{url_for('/submitsignup')}}" method="POST">
+  <label for="fname">First name:</label><br>
+  <input type="text" id="firstname" name="fname"><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lastname" name="lname"><br>
+  <label for="email">Email:</label><br>
+  <input type="email" id="email" name="email"><br>
+  <label for="username">Username:</label><br>
+  <input type="text" id="username" name="username"><br>
+  <label for="password">Password:</label><br>
+  <input type="password" id="password" name="password"><br><br>
+  <input type="submit" value="Submit"><br>
+</form>
+<br>
+<p1>If you already have an account, use this form to log in:</p1>
+<form action="{{url_for('/submitlogin')}}"  method="POST">
+  <label for="email"> Email:</label><br>
+  <input type="email" id="email" name="email"><br>
+  <label for="password">Password:</label><br>
+  <input type="password" id="password" name="password"><br><br>
+  <input type="submit" value="Submit"><br><br>
+</form>
+</body>
+</html>
